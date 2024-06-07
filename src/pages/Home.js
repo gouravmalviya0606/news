@@ -59,7 +59,9 @@ const Home = ({user}) => {
                                 <span className='bg-dark p-1 mt-3'></span>
                                 <div className='ms-3 mt-3'>
                                     <p className='p-3'>
-                                        {data.discription}
+                                        {/* {data.discription} */}
+
+                                        <div dangerouslySetInnerHTML={{ __html: data.discription }} />
                                     </p>
                                 </div>
                             </div>
